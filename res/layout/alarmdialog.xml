@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"    
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="8px">  	
+
+    <!-- TOP HEADER -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayAlarmReminderTop"
+  		android:orientation="horizontal"    
+			android:layout_marginBottom="8dp"
+  		android:layout_width="fill_parent" android:layout_height="wrap_content">  	
+	  	
+			<ImageView android:id="@+id/imgAlarmReminderHeader"
+				android:layout_marginRight="8dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+			<TextView android:id="@+id/labAlarmReminderHeader"
+				android:layout_alignParentLeft="true"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:textColor="#FFEEEEEE"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  	
+		</LinearLayout>
+
+    <!-- CONTENT -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayAlarmReminderContent"
+			android:orientation="horizontal"
+	    android:layout_marginBottom="16dp"	    
+			android:layout_width="fill_parent" android:layout_height="190dp">
+
+			<ListView android:id="@+id/listAlarmReminderContent"
+       	android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+
+		</LinearLayout>
+		
+    <!-- BOTTOM CONTROLS -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayAlarmReminderBottom"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent" android:layout_height="wrap_content">
+  	
+			<Button android:id="@+id/btnAlarmReminderClear" android:text="@string/labReminderClear"
+				android:paddingLeft="26dp" android:paddingRight="26dp"		
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>  	
+
+			<Button android:id="@+id/btnAlarmReminderSnooze" android:text="@string/labReminderSnooze"
+				android:paddingLeft="26dp" android:paddingRight="26dp"		
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>  	
+
+			<Button android:id="@+id/btnAlarmReminderOpen" android:text="@string/labReminderOpen"
+				android:layout_marginLeft="24dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  	
+		</LinearLayout>			
+
+</LinearLayout>			

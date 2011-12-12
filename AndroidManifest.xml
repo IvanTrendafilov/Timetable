@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="uk.ac.ed.timetable"		
+		android:versionCode="1" android:versionName="1.0">
+		
+		<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+				
+    <application android:label="Timetable" android:icon="@drawable/icon" android:theme="@android:style/Theme.Black">
+				
+				<receiver android:name=".TimetableReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+				</receiver>
+
+        <service android:name=".reminder.AlarmService" android:process=":remote" />        
+
+        <activity android:name=".Timetable" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activities.ActivityCourse" android:label="@string/titleDefaultCourse">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_NEW_COURSE" />
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_COURSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                
+        <activity android:name=".activities.ActivityAssignment" android:label="@string/titleDefaultAssignment">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_NEW_ASSIGNMENT" />
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_ASSIGNMENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activities.ActivityNote" android:label="@string/titleDefaultNote">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_NEW_NOTE" />
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activities.ActivityOptions" android:label="@string/titleDefaultOptions">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_OPTIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activities.ActivityAbout" android:label="@string/titleDefaultAbout">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_VIEW_ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activities.ActivityList" android:label="@string/titleDefaultCourse" android:configChanges="keyboard|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_VIEW_COURSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+            	<action android:name="android.intent.action.SEARCH" />
+            	<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+				<meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        
+        <activity android:name=".activities.ActivityCourseAction"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!-- Provides search suggestions for words and their definitions. -->
+        <provider android:name="DetailsProvider"
+                android:authorities="details"
+                android:syncable="false" />
+        
+        
+        <activity android:name=".reminder.AlarmDialog" android:label="@string/titleDefaultAlarmDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_VIEW_ALARMDIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="uk.ac.ed.widgets.DateWidget" android:label="Select date" 
+        	android:launchMode="singleTop" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_SELECT_DATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="uk.ac.ed.widgets.TimeWidget" android:label="Select time"
+        	android:launchMode="singleTop" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_SELECT_TIME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="uk.ac.ed.widgets.KeyboardWidget" android:label="Edit text"
+					android:launchMode="singleTop" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.Timetable.ACTION_MODE_EDIT_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>      
+        
+        
+          
+        
+    </application>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="8"></uses-sdk>
+</manifest>

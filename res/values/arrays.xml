@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <array name="repeatType">
+        <item>none</item>
+        <item>daily</item>
+        <item>weekly</item>
+        <item>monthly</item>
+        <item>yearly</item>
+    </array>
+    <array name="agendaViewType">
+        <item>today</item>
+        <item>day</item>
+        <item>week</item>
+        <item>month</item>
+    </array>
+    <array name="firstDayOfWeek">
+        <item>sunday</item>
+        <item>monday</item>
+    </array>
+</resources>

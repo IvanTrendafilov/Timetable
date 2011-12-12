@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/rlayAgenda"
+	android:padding="4dp"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<!-- TOP VIEW CONTROL BUTTON -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/rlayAgendaTop"
+    android:layout_alignParentTop="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<TextView android:id="@+id/labSelectViewItem"
+			android:singleLine="true" android:layout_alignParentLeft="true"
+      		android:gravity="center_vertical"
+			android:textSize="18dp"
+			android:layout_marginTop="3px" android:layout_marginRight="6px"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+		<view xmlns:android="http://schemas.android.com/apk/res/android" 			
+			class="uk.ac.ed.timetable.views.ViewImgButton"
+     	style="?android:attr/buttonStyleSmall"
+			android:id="@+id/btnSelectViewItemPrev"
+			android:layout_toRightOf="@+id/labSelectViewItem"
+			android:layout_width="48px" android:layout_height="wrap_content"/> 
+				
+		<Button android:id="@+id/btnSelectViewItemToday" android:text="@string/labSelectItemToday"
+      style="?android:attr/buttonStyleSmall"
+			android:layout_toRightOf="@+id/btnSelectViewItemPrev"
+			android:layout_toLeftOf="@+id/btnSelectViewItemNext"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+	    		            		            
+		<view xmlns:android="http://schemas.android.com/apk/res/android" 			
+			class="uk.ac.ed.timetable.views.ViewImgButton"
+      style="?android:attr/buttonStyleSmall"
+			android:id="@+id/btnSelectViewItemNext"
+			android:layout_alignParentRight="true"
+			android:layout_width="48px" android:layout_height="wrap_content"/>
+							
+	</RelativeLayout>
+
+ 	<!-- CONTENT VIEW -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/rlayAgendaView"
+    android:layout_above="@+id/rlayAgendaBottom"
+    android:layout_below="@+id/rlayAgendaTop"    
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+ 
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayAgendaData"
+			android:orientation="vertical"
+    	android:gravity="top"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		</LinearLayout>
+	
+	</RelativeLayout>
+			
+	<!-- BOTTOM SELECT VIEW BUTTONS -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/rlayAgendaBottom"
+    android:layout_alignParentBottom="true"
+		android:layout_marginTop="8dp"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    
+			<Button android:id="@+id/btnSetViewToday" android:text="@string/labViewToday"
+        style="?android:attr/buttonStyleSmall"
+        android:paddingLeft="12sp" android:paddingRight="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>		    
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:orientation="horizontal" android:layout_width="12dp" android:layout_height="wrap_content"/>
+
+			<Button android:id="@+id/btnSetViewDay" android:text="@string/labViewDay"
+        style="?android:attr/buttonStyleSmall"
+        android:paddingLeft="12sp" android:paddingRight="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>		    
+
+			<Button android:id="@+id/btnSetViewWeek" android:text="@string/labViewWeek"
+        style="?android:attr/buttonStyleSmall"
+        android:paddingLeft="12sp" android:paddingRight="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>		    
+
+			<Button android:id="@+id/btnSetViewMonth" android:text="@string/labViewMonth"
+        style="?android:attr/buttonStyleSmall"
+        android:paddingLeft="12sp" android:paddingRight="12sp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"/>		    
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:orientation="horizontal" android:layout_width="12dp" android:layout_height="wrap_content"/>
+		    
+			<TextView android:id="@+id/labWeekStr"				
+					android:layout_width="wrap_content" android:layout_height="fill_parent" 
+					android:textColor="#707070"
+	        android:gravity="center_vertical"
+					android:textSize="18dp"				
+			    android:text="@string/labWeek"/>
+			    	        
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    		android:orientation="horizontal" android:layout_width="6dp" android:layout_height="wrap_content"/>
+	    		
+			<TextView android:id="@+id/labWeekNr"
+					android:textSize="18dp"				
+	        android:gravity="center_vertical"
+					android:textStyle="bold"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"/>	        
+		    
+		</LinearLayout>
+		
+	</RelativeLayout>
+
+</RelativeLayout>

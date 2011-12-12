@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/llayNote"
+    android:orientation="vertical"    
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/marginDialog">
+
+		<!-- LABEL SUBJECT -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  	android:orientation="horizontal" android:layout_marginBottom="@dimen/marginBottom"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    	    	   
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="@dimen/fontSizeLabel"
+		    android:text="@string/labText"/>
+		    
+		</LinearLayout>
+
+		<!-- EDIT SUBJECT -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom="@dimen/marginBottom"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+			<view xmlns:android="http://schemas.android.com/apk/res/android"
+				class="uk.ac.ed.widgets.TouchEdit"
+				android:id="@+id/edNoteSubject" 
+				android:gravity="top"
+		    android:layout_width="fill_parent" android:layout_height="fill_parent"
+		    android:minLines="10" android:maxLines="10"
+		    android:text=""/>
+			  		    		    		    
+		</LinearLayout>
+	
+		<!-- BUTTONS DELETE/SAVE -->
+ 		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+   		<ImageButton android:id="@+id/btnNoteDelete"
+	    	android:layout_width="@dimen/closeBtnWidth"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="true"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:text="@string/btnDelete"
+	    	android:gravity="center"
+			  android:nextFocusRight="@+id/btnNoteSave"    	
+	    	android:src="@drawable/checkmarkdelete"/>
+    	
+	   	<ImageButton android:id="@+id/btnNoteSave"
+	    	android:layout_width="@dimen/closeBtnWidth"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="true"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:text="@string/btnSave"
+	    	android:gravity="center"
+			  android:nextFocusLeft="@+id/btnNoteDelete"    	
+	    	android:src="@drawable/checkmarkok"/>
+
+		</RelativeLayout>
+	
+</LinearLayout>

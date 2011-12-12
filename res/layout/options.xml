@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/llayOptions"
+    android:orientation="vertical"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/marginDialog">
+	
+		<!-- FirstDayOfWeek -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:textSize="@dimen/fontSizeLabel"
+			    android:text="@string/labFirstDayOfWeek"/>
+			    
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    	    	   
+	    	<Spinner android:id="@+id/spinFirstDayOfWeek"
+	    		android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"/>	        
+			    
+		</LinearLayout>
+		
+		<!-- 24HourMode -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<CheckBox android:id="@+id/chkOptions24HourMode"
+					android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/lab24HourMode"/>
+			    
+		</LinearLayout>
+		
+		<!-- SnoozeMinutes -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:textSize="@dimen/fontSizeLabel"
+			    android:text="@string/strSnoozeMinutes"/>
+			    
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    	    	   
+	    	<Spinner android:id="@+id/spinSnoozeMinutes"
+	    		android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"/>	        
+			    
+		</LinearLayout>		
+
+		<!-- SnoozeTimes -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:textSize="@dimen/fontSizeLabel"
+			    android:text="@string/strSnoozeTimes"/>
+			    
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    	    	   
+	    	<Spinner android:id="@+id/spinSnoozeTimes"
+	    		android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="true"/>	        
+			    
+		</LinearLayout>		
+			
+		<!-- Bottom buttons -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="16dp"/>
+	 	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    	
+	   	<ImageButton android:id="@+id/btnOptionsSave"
+	    	android:layout_width="@dimen/closeBtnWidth"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="true"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:text="@string/btnSave"
+	    	android:gravity="center"
+	    	android:src="@drawable/checkmarkok"/>
+	
+		</RelativeLayout>
+</LinearLayout>

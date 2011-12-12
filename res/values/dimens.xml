@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="labOptionsDefaultWidth">150dp</dimen>
+	<dimen name="marginBottom">6dp</dimen>
+	<dimen name="marginBottomBig">9dp</dimen>
+	<dimen name="marginBottomSmall">3dp</dimen>
+	<dimen name="fontSizeLabel">18dp</dimen>
+	<dimen name="fontSizeSublabel">16dp</dimen>
+	<dimen name="marginDialog">6dp</dimen>		
+	<dimen name="paddingLeftLabel">4dp</dimen>		
+	<dimen name="paddingSmallButton">12dp</dimen>		
+	<dimen name="paddingButtonTime">16dp</dimen>		
+	<dimen name="labDefaultWidth">100dp</dimen>
+	<dimen name="labDefaultWidth1">120dp</dimen>
+	<dimen name="labDefaultWidth2">140dp</dimen>
+	<dimen name="labDefaultWidth3">150dp</dimen>
+	<dimen name="labDefaultWidth4">160dp</dimen>
+	<dimen name="horSpace">8dp</dimen>
+	<dimen name="repTypeBtnWidth">160dp</dimen>
+	<dimen name="repTypeSpacer">80dp</dimen>
+	<dimen name="closeBtnWidth">100dp</dimen>	
+</resources>

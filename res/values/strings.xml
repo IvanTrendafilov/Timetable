@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_ack">Acknowledgements to the AnCal project:\nhttp://code.google.com/p/ancal/\n</string>
+    <string name="app_email">email:</string>
+    <string name="app_author">Ivan Trendafilov</string>
+    <string name="app_authorcopy">University of Edinburgh, 2010\n</string>
+    <string name="app_name">Timetable</string>
+    <string name="app_versionstr">version</string>    
+    <string name="TimeZone">Timezone</string>
+    <string name="app_type"></string>
+    <string name="app_about">Timetable is an academic time management application.</string>    
+    <string name="actionNew">New</string>
+    <string name="actionNewCourse">Courses list</string>
+    <string name="actionNewAssignment">New assignment</string>
+    <string name="actionNewNote">New note</string>
+    <string name="actionView">View</string>
+    <string name="actionShowAllAssignments">Hide/Show due assignments</string>
+    <string name="actionOptions">Options</string>
+    <string name="actionAbout">About</string>
+    <string name="actionEditCourse">Edit course</string>
+    <string name="btnSave">Save</string>
+    <string name="btnDelete">Delete</string>
+    <string name="btnDone">Done</string>
+    <string name="titleNewCourse">New course</string>
+    <string name="titleEditCourse">Edit course</string>    
+    <string name="titleDefaultAssignment">Assignment</string>
+    <string name="titleNewAssignment">New assignment</string>
+    <string name="titleEditAssignment">Edit assignment</string>
+    <string name="titleDefaultNote">Note</string>
+    <string name="titleNewNote">New note</string>
+    <string name="titleEditNote">Edit note</string>    
+    <string name="titleDefaultAbout">About</string>
+    <string name="titleDefaultOptions">Options</string>
+    <string name="titleDefaultAlarmDialog">Reminder</string>
+    <string name="titleDefaultRepeat">Repeat</string>
+    <string name="labAgendaViewType">View</string>    
+    <string name="labSubject">Subject</string>    
+    <string name="labText">Text</string>    
+    <string name="labStartDate"></string>
+    <string name="labStartTime">start time</string>
+    <string name="labAlarm">alarm</string>
+    <string name="labDone">done</string>
+    <string name="labPriority">priority</string>
+    <string name="labAllDay">all day</string>
+    <string name="labRepeat"></string>
+    <string name="labDueDate">due</string>
+    <string name="labSetTheTime">Set the time</string>    
+    <string name="labNoTime">no time</string>
+    <string name="labNoDate">no date</string>
+    <string name="labNoEndDate">no end date</string>
+    <string name="labEvery">every</string>        
+    <string name="labEndOn">end</string>
+    <string name="lab24HourMode">24 hour mode</string>
+    <string name="errCantOpenDb">Cant open database</string>        
+    <string name="errNoDbAccess">No access to database</string>        
+    <string name="errCantCreateTable">Cant create table</string>        
+    <string name="errTableNotExists">Table does not exist</string>        
+    <string name="infoEnterAllRequiredData">Please enter all required data</string>
+    <string name="infoEnterValidDate">Please correct date</string>       
+    <string name="msgTypeInfo">Information</string>
+    <string name="msgTypeWarning">Warning</string>
+    <string name="msgTypeError">Error</string>
+    <string name="msgBoxButtonOk">OK</string>
+    <string name="errCantInsertNewData">Cant insert new data to database</string>        
+    <string name="errCantUpdateData">Cant update row values in database</string>        
+    <string name="errUnknown">Undefined database error</string>   
+    <string name="errCantGetDataFromTable">Cant get data from table</string>
+    <string name="errCantFindData">Cant find data</string>
+    <string name="errCantGetData">Cant get data</string>            
+    <string name="errCantDeleteData">Cant delete row values from database</string>
+    <string name="errCantSetValuesForDataRow">Cant set values for data row</string>
+    <string name="errCantGetValuesFromDataRow">Cant get values from data row</string>                
+    <string name="errCantSaveOptions">Cant save options values</string>                
+    <string name="labTodayItemCourses">Courses</string>
+    <string name="labTodayItemAssignments">Assignments</string>
+    <string name="labTodayItemNotes">Notes</string>
+    <string name="labTodayItemNone">none</string>
+    <string name="labWeek">W:</string>
+    
+    <string name="labSelectViewDay">Day</string>
+    <string name="labSelectViewWeek">Week</string>
+    <string name="labSelectViewMonth">Month</string>
+        
+    <string name="labSelectItemPrev">prev</string>
+    <string name="labSelectItemToday">today</string>
+    <string name="labSelectItemNext">next</string>
+    <string name="labFirstDayOfWeek">First day of week</string>
+    
+    <string name="msgDayOverdue">yesterday</string>    
+    <string name="msgDaysOverdue">days ago</string>
+        
+	<string name="msgYouHaveASTS">You have %d lectures(s)\n..and %d assignment(s) due</string>		
+	<string name="msgYouHaveTS">You have %d assignment(s) due</string>		
+	<string name="msgYouHaveAS">You have %d lectures(s)</string>		
+	<string name="msgYouHaveNoASTS">List is empty</string>
+	
+	<string name="msgASTS">%d lecture(s) / %d assignment(s)..</string>
+	<string name="msgTS">%d assignment(s)..</string>
+	<string name="msgAS">%d course(s)..</string>
+
+	<string name="strReminder">Reminder</string>
+				
+	<string name="labReminderClear">Clear</string>
+	<string name="labReminderSnooze">Snooze</string>
+	<string name="labReminderOpen">Open</string>
+	<string name="labViewToday">Today</string>
+	<string name="labViewDay">Day</string>
+	<string name="labViewWeek">Week</string>
+	<string name="labViewMonth">Month</string>
+	
+	<!-- REPEAT TYPE -->		
+	<string name="strRepeatTypeNone">none</string>
+	<string name="strRepeatTypeDaily">daily</string>
+	<string name="strRepeatTypeWeekly">weekly</string>
+	<string name="strRepeatTypeMonthly">monthly</string>
+	<string name="strRepeatTypeYearly">yearly</string>
+	<string name="strRepeatTypeLabel">Select</string>
+
+	<!-- REPEAT INFO -->
+	<string name="strRepeatInfoUntil">until</string>
+	<string name="strRepeatInfoDaily">every %d day(s)%s</string>
+	<string name="strRepeatInfoWeekly">every %d week(s)%s</string>
+	<string name="strRepeatInfoMonthly">every %d month(s)%s</string>
+	<string name="strRepeatInfoYearly">every year%s</string>
+
+	<!-- ASSIGNMENT PRIORITY -->
+	<string name="strAssignmentPriorityLow">low</string>
+	<string name="strAssignmentPriorityDefault">default</string>
+	<string name="strAssignmentPriorityHigh">high</string>
+	<string name="strSnoozeMinutes">Snooze alarm for (minutes)</string>		
+	<string name="strSnoozeTimes">Clear snoozed alarm after (times)</string>
+		
+	<!-- DATE WIDGET -->
+	<string name="strDateWidgetSelect">Select day</string>
+	<string name="strDateWidgetSelected">Selected day:</string>
+	<string name="strDateWidgetNone">none</string>
+	<!-- TIME WIDGET -->
+	<string name="strTimeWidgetSelect">Select time</string>
+	<string name="strTimeWidgetNone">none</string>
+	<string name="strTimeWidgetSet">set</string>
+		
+	<!--  COURSES stuff -->
+	<string name="titleDefaultCourse">Timetable: Course list</string>
+	<string name="menu_search">Search</string>
+
+    <!-- The description that will show up in the search settings for this source.  -->
+   	<string name="settings_description">Times and locations</string>
+    <!-- General instructions in the main activity. -->
+   	<string name="search_instructions"></string>
+    <!-- Shown above search results when we receive a search request. -->
+    <string name="search_results"> Courses starting with \"%s\":</string>		
+   	<string name="search_label">Timetable: Course Management</string>
+</resources>

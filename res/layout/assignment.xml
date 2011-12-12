@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/llayAssignment"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/marginDialog">
+
+		<!-- LABEL SUBJECT -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+	  	android:layout_marginBottom="@dimen/marginBottom"
+	  	android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="@dimen/fontSizeLabel"
+		  	android:text="@string/labSubject"/>
+		  
+		</LinearLayout>
+    
+		<!-- EDIT SUBJECT -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+	    android:layout_marginBottom="@dimen/marginBottom"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		  
+			<view xmlns:android="http://schemas.android.com/apk/res/android"
+				class="uk.ac.ed.widgets.TouchEdit"
+				android:id="@+id/edAssignmentSubject"
+				android:gravity="top"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 				android:minLines="2" android:maxLines="2"		    
+		    android:text=""/>  			
+		    
+		</LinearLayout>
+	
+		<!-- DONE,ALARM -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/llayAssignmentDoneAlarm"
+	    android:orientation="horizontal"
+	    android:gravity="right"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+			<CheckBox android:id="@+id/chkAssignmentDone"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:paddingRight="6dp"
+		    android:text="@string/labDone"/>
+
+			<CheckBox android:id="@+id/chkAssignmentAlarm"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:paddingRight="6dp"
+		    android:text="@string/labAlarm"/>
+		    
+		</LinearLayout>
+
+		<!-- PRIORITY -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottomSmall"	    
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+					android:textSize="@dimen/fontSizeSublabel"
+	    		android:paddingLeft="@dimen/paddingLeftLabel"
+	    		android:paddingRight="@dimen/horSpace"
+					android:gravity="center_vertical"
+		    	android:text="@string/labPriority"/>
+		    	
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"	    
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+				<Button android:id="@+id/btnAssignmentPriorityLow" style="?android:attr/buttonStyleSmall"
+					android:paddingLeft="@dimen/paddingSmallButton" android:paddingRight="@dimen/paddingSmallButton"
+					android:text="@string/strAssignmentPriorityLow"
+			    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    
+				<Button android:id="@+id/btnAssignmentPriorityDefault" style="?android:attr/buttonStyleSmall"
+					android:paddingLeft="@dimen/paddingSmallButton" android:paddingRight="@dimen/paddingSmallButton"
+					android:text="@string/strAssignmentPriorityDefault"
+			    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+				<Button android:id="@+id/btnAssignmentPriorityHigh" style="?android:attr/buttonStyleSmall"
+					android:paddingLeft="@dimen/paddingSmallButton" android:paddingRight="@dimen/paddingSmallButton"
+					android:text="@string/strAssignmentPriorityHigh"
+			    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+					
+		</LinearLayout>
+		
+		<!-- DUE DATE  -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottomSmall"	    
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    
+				<TextView android:layout_width="@dimen/labDefaultWidth" android:layout_height="fill_parent"
+					android:textSize="@dimen/fontSizeSublabel"
+		    	android:paddingLeft="@dimen/paddingLeftLabel"
+					android:gravity="center_vertical"
+			    android:text="@string/labDueDate"/>
+		    
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/llayAssignmentDueDate"
+		    android:orientation="horizontal"
+		    android:layout_marginBottom="@dimen/marginBottom"	    
+		    android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    
+			  <Button android:id="@+id/btnAssignmentDueDate"
+					android:text="@string/labNoDate"
+					style="?android:attr/buttonStyleSmall"
+					android:textColor="#FF444466" android:textStyle="bold"
+					android:paddingLeft="@dimen/paddingSmallButton"
+					android:paddingRight="@dimen/paddingSmallButton"					
+			    android:layout_width="fill_parent" android:layout_height="fill_parent"/>			  	
+			  		    
+		</LinearLayout>
+	
+		<!-- BUTTONS DELETE/SAVE -->
+ 		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+   		<ImageButton android:id="@+id/btnAssignmentDelete"
+	    	android:layout_width="@dimen/closeBtnWidth"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="true"
+	    	android:layout_alignParentLeft="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:text="@string/btnDelete"
+	    	android:gravity="center"
+			  android:nextFocusRight="@+id/btnAssignmentSave"    	
+	    	android:src="@drawable/checkmarkdelete"/>
+    	
+   		<ImageButton android:id="@+id/btnAssignmentSave"
+	    	android:layout_width="@dimen/closeBtnWidth"
+	    	android:layout_height="wrap_content"
+	    	android:focusable="true"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_alignParentBottom="true"
+	    	android:text="@string/btnSave"
+	    	android:gravity="center"
+			  android:nextFocusLeft="@+id/btnAssignmentDelete"    	
+	    	android:src="@drawable/checkmarkok"/>
+
+	</RelativeLayout>
+	
+</LinearLayout>
